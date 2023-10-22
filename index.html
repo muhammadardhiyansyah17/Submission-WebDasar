@@ -14,7 +14,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- -->
+
+    <!-- ICON -->
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -128,50 +134,79 @@
             </article>
         </div>
 
-        <aside>
-            <article>
-                <figure class="cover-photo">
-                    <img src="assets/img/foto.jpg" class="profile">
-                </figure>
-                <figcaption class="profile-name">Muhammad Ardhiyansyah</figcaption>
+        <article id="Galery">
+            <div class="card-galery">
+                <h1>Framework Backend dan FrontEnd Populer</h1>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="assets/img/laravel.jpg" id="pop">
+                        <div class="text">Laravel</div>
+                    </div>
 
-                <p class="about" id="about">About</p>
-                <p>Saya adalah pengembang aplikasi</p>
-                <p class="skils">Web Developer</p>
-                <table align="center" width="90%">
-                    <tr>
-                        <th>Phone:</th>
-                        <td>+6282122116992</td>
-                    </tr>
-                    <tr>
-                        <th>E-Mail:</th>
-                        <td>@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <th>Phone:</th>
-                        <td>+6282122116992</td>
-                    </tr>
-                    <tr>
-                        <th>E-Mail:</th>
-                        <td>@gmail.com</td>
-                    </tr>
-                </table>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="assets/img/react.png" id="pop">
+                        <div class="text">React JS</div>
+                    </div>
 
-                </table>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="assets/img/golang.png" id="pop">
+                        <div class="text">Golang</div>
+                    </div>
 
-                <div>
-                    <a href="https://www.facebook.com/rifki.ramadhan.359778/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/rifkiromdons/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCBjmj_l9P55oY6Ls4dvPToQ"><i
-                            class="fab fa-youtube"></i></a>
-                    <a href="https://www.linkedin.com/in/rifki-ramadhan-b98a6b195/"><i class="fab fa-linkedin"></i></a>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
                 </div>
-
-            </article>
-        </aside>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </article>
     </main>
 
+    <aside>
+        <article class="card-profile">
+            <figure class="cover-photo">
+                <img src="assets/img/profile.jpg" class="profile">
+            </figure>
+            <figcaption class="profile-name">Muhammad Ardhiyansyah</figcaption>
+
+            <p class="about" id="about">About</p>
+            <p>Saya adalah pengembang aplikasi</p>
+            <p class="skils">Web Developer</p>
+            <table align="center" width="90%">
+                <tr>
+                    <th>Phone:</th>
+                    <td>+62823948492</td>
+                </tr>
+                <tr>
+                    <th>E-Mail:</th>
+                    <td>Riyan@gmail.com</td>
+                </tr>
+            </table>
+            <div>
+                <a href="https://www.linkedin.com/in/muhammad-ardhiyansyah-2a4367186/"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/Muhammad.Ardhiyansyah17/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/muhammadardhiyansyah17/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/riyan_Jr17"><i class="fab fa-twitter"></i></a>
+            </div>
+        </article>
+    </aside>
+
+
+
+    <script src="js/slider.js"></script>
+
+    <div class="clear"> </div>
     <footer> Submission Web Dasar &#169; 2023, Dicoding IDCAMP</footer>
+
 </body>
 
 </html>
